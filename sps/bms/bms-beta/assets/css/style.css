@@ -1,0 +1,402 @@
+body {
+  background-color: #f8f9fa;
+}
+
+/* Sidebar hover-expand */
+.sidebar {
+  width: 70px;
+  transition: width 0.3s;
+  min-height: calc(100vh - 56px);
+  position: sticky;
+  top: 56px;
+}
+
+.sidebar a {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  color: #ddd;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.sidebar a i {
+  font-size: 18px;
+  width: 30px;
+  text-align: center;
+}
+
+.sidebar a span {
+  display: none;
+  margin-left: 8px;
+}
+
+.sidebar:hover {
+  width: 200px;
+}
+
+.sidebar:hover a span {
+  display: inline;
+}
+
+.sidebar a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+/* Filters look */
+.filters {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.05);
+}
+
+.filters select,
+.filters button {
+  border-radius: 20px;
+}
+/* Main content background */
+.flex-grow-1 {
+  background: linear-gradient(135deg, #f9fafb 0%, #eef1f5 100%);
+}
+
+/* Cards */
+.card {
+  border-radius: 15px;
+}
+
+/* Filters sticky shadow */
+.sticky-top {
+  background: white;
+  border-radius: 10px;
+}
+
+/* Icons hover effect */
+.card-body i {
+  transition: transform 0.2s ease;
+}
+
+.card-body:hover i {
+  transform: scale(1.1);
+}
+
+.flex-grow-1 {
+  background: linear-gradient(135deg, #f9fafb 0%, #eef1f5 100%);
+}
+
+.card {
+  border-radius: 15px;
+}
+
+.sticky-top {
+  background: white;
+  border-radius: 10px;
+}
+
+.card-body i {
+  transition: transform 0.2s ease;
+}
+
+.card-body:hover i {
+  transform: scale(1.1);
+}
+
+.input-group input {
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    margin: 20px;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 12px;
+  }
+  
+  th {
+    background-color: #2c3e50;
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  tr:hover {
+    background-color: #eef5ff;
+  }
+  
+  .status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .full-time {
+    background-color: #27ae60;
+  }
+  
+  .yes {
+    background-color: #2ecc71;
+  }
+  
+  .no {
+    background-color: #e74c3c;
+  }
+  
+  .active {
+    background-color: #3498db;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .btn {
+    background-color: #3498db;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .btn:hover {
+    background-color: #2980b9;
+    /* Custom compact form control */
+    .form-select-sm,
+    .btn-sm {
+      padding-top: 0.25rem !important;
+      padding-bottom: 0.25rem !important;
+      height: 30px !important;
+      font-size: 0.85rem !important;
+    }
+    /* Filters card shadow and roundness */
+    .filters-card {
+      border-radius: 8px;
+      background: #fff;
+    }
+    /* Reduce spacing between elements */
+    .gap-tight {
+      gap: 0.4rem;
+    }
+  }
+  
+  border-radius: 6px 0 0 6px;
+}
+
+.input-group button {
+  border-radius: 0 6px 6px 0;
+}
+/* Prevent unwanted horizontal scrolling */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Filters styling */
+.filters-card .d-flex {
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.filters-card select,
+.filters-card input,
+.filters-card button {
+  max-width: 100%;
+  height: 32px;
+  /* Smaller height */
+  font-size: 0.85rem;
+  padding: 0.25rem 0.5rem;
+}
+
+/* Table adjustments */
+.table-area {
+  overflow-x: auto;
+}
+
+.table {
+  min-width: 100%;
+  table-layout: auto;
+  word-wrap: break-word;
+}
+
+.table td, .table th {
+  white-space: normal;
+  padding: 0.4rem;
+}
+
+/* Reduce padding in table cells */
+.compact-table td,
+.compact-table th {
+  padding: 4px 8px !important;
+  white-space: nowrap;
+  /* Prevents large gaps */
+}
+
+.compact-table .badge {
+  font-size: 0.75rem;
+  padding: 4px 6px;
+}
+
+
+/* Smaller action button */
+.compact-table .btn-sm {
+  padding: 2px 6px;
+  font-size: 0.75rem;
+}
+/* Compact table rows */
+.compact-table th,
+.compact-table td {
+  padding: 4px 8px !important;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+/* Smaller badges and buttons in table */
+.compact-table .badge {
+  font-size: 11px;
+  padding: 3px 6px;
+}
+
+.compact-table .btn {
+  padding: 2px 6px;
+  font-size: 12px;
+}
+
+/* Reduce height for 2025, Annual, and Send buttons */
+.filter-short {
+  height: 30px !important;
+  padding: 2px 8px !important;
+  font-size: 13px;
+}
+
+.table th,
+.table td {
+  padding: 4px 8px !important;
+  /* Less vertical & horizontal space */
+  font-size: 14px;
+  /* Slightly smaller text */
+  white-space: nowrap;
+  /* Prevents wrapping unless needed */
+}
+
+.table {
+  border-collapse: collapse !important;
+  /* Makes borders tighter */
+}
+
+.table thead th {
+  text-align: center;
+  /* Optional: center header text */
+}
+/* Compact table style */
+.compact-table th,
+.compact-table td {
+  padding: 4px 8px !important;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 150px;
+  vertical-align: middle;
+}
+
+.compact-table {
+  border-collapse: collapse !important;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.compact-table .btn {
+  padding: 2px 6px !important;
+  font-size: 12px;
+}
+
+.compact-table .badge {
+  font-size: 11px;
+  padding: 3px 6px;
+}
+
+/* Ensure filter buttons are same height */
+.filter-short {
+  height: 31px !important;
+}
+/* Truncate table cell text with ellipsis */
+.compact-table td {
+  max-width: 120px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* Show full content on hover */
+.compact-table td:hover {
+  white-space: normal;
+  word-break: break-word;
+  background-color: #f8f9fa;
+  /* Optional: highlight on hover */
+  z-index: 1;
+  position: relative;
+}
+
+/* Dashboard-specific dropdown styling */
+.dash-dropdown-btn {
+  width: 100%;
+  text-align: left;
+  background-color: #fff !important;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+  padding: 10px 15px;
+  transition: all 0.2s ease-in-out;
+}
+
+.dash-dropdown-btn:hover {
+  background-color: #f8f9fa !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.dash-dropdown-menu {
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.dash-dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+
+/* Dashboard simple button style */
+.dash-btn {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  display: block;
+}
+
+.dash-btn:hover {
+  background-color: #f8f9fa;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
